@@ -1,0 +1,384 @@
+.yota-app,
+.yota-app * {
+    margin: 0; padding: 0;
+}
+
+.yota-app {
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #303030;
+}
+
+.yota-app a {
+    color: #1dafec;
+    text-decoration: none;
+}
+
+.yota-app a:hover {
+    text-decoration: underline;
+}
+
+.yota-app img {
+    vertical-align: top;
+}
+
+.yota-app .clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.yota-app .inner-wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.yota-app .button-1 {
+    display: inline-block;
+    padding: 17px 40px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+    text-decoration: none !important;
+    background: #00aeef;
+    border-radius: 30px;
+}
+
+.yota-app .button-2 {
+    display: inline-block;
+    padding: 17px 40px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 30px;
+}
+
+.b-yota-app__b_1 {
+    padding: 75px 0 55px;
+}
+
+.b-yota-app__b_1_title .row-1 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #383838;
+}
+
+.b-yota-app__b_1_title .row-2 {
+    margin: 30px 0 0;
+    font-size: 22px;
+    line-height: 30px;
+    color: #6c6c6c;
+}
+
+.b-yota-app__b_2 {
+    padding: 50px 0;
+    background: #f2fafe;
+}
+
+.b-yota-app__b_2_left {
+    display: table-cell;
+    width: 175px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.b-yota-app__b_2_left img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.b-yota-app__b_2_content {
+    display: table-cell;
+    padding: 0 30px;
+    vertical-align: middle;
+}
+
+.b-yota-app__b_2_text .row-1 {
+    font-size: 22px;
+}
+
+.b-yota-app__b_2_text .row-1 p {
+    padding: 5px 0;
+}
+
+.b-yota-app__b_2_text .row-2 {
+    padding: 12px 0 0;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.b-yota-app__b_2_text .row-2 span {
+    font-size: 25px;
+}
+
+.b-yota-app__b_2_text span {
+    color: #00aeef;
+}
+
+.b-yota-app__b_3 {
+    padding: 70px 0 50px;
+}
+
+.b-yota-app__b_4 {
+    padding: 45px 0 85px;
+    border-top: 2px solid #f7f7f7;
+}
+
+.b-yota-app__b_4_top.div-info {
+    overflow: hidden;
+}
+
+.b-yota-app__b_4_top ul {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    list-style: none;
+}
+
+.b-yota-app__b_4_top ul.info {
+    float: left;
+    width: 33%;
+}
+
+.b-yota-app__b_4_top ul li {
+    display: table-cell;
+    padding: 0 0 0 8px;
+    font-size: 17px;
+    color: #919190;
+    vertical-align: middle;
+}
+
+.b-yota-app__b_4_top ul li.info-text {
+    padding: 0 5px 0 8px;
+}
+
+.b-yota-app__b_4_top ul li:nth-child(odd) {
+    width: 54px;
+    padding: 0;
+}
+
+.b-yota-app__b_4_top ul img {
+    width: 100%
+}
+
+.b-yota-app__b_4_bottom {
+    padding: 50px 0 0;
+    font-size: 17px;
+    color: #b0b0b0;
+}
+
+@media (max-width: 1366px) {
+    .b-yota-app .button-1,
+    .b-yota-app .button-2 {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px 40px;
+        border-radius: 25px;
+    }
+    
+    .b-yota-app__b_4_top ul li:nth-child(odd) {
+        width: 46px;
+    }
+    
+    .b-yota-app__b_4_top ul li,
+    .b-yota-app__b_4_bottom {
+        font-size: 14px;
+    }
+    
+    .b-yota-app__b_2_text .row-1 {
+        font-size: 18px;
+    }
+    
+    .b-yota-app__b_2_text .row-2 {
+        font-size: 31px;
+    }
+
+    .b-yota-app__b_2_text .row-2 span {
+        font-size: 21px;
+    }
+    
+    .b-yota-app__b_1_title .row-1 {
+        font-size: 30px;
+    }
+
+    .b-yota-app__b_1_title .row-2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .yota-app .inner-wrapper {
+        width: auto;
+        padding: 0 10px;
+        margin: 0;
+    }
+    
+    .b-yota-app__b_3_buttons {
+        text-align: center;
+    }
+    
+    .b-yota-app__b_4_top ul li,
+    .b-yota-app__b_4_bottom {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .b-yota-app .button-1,
+    .b-yota-app .button-2 {
+        padding: 11px 20px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+    }
+    
+    .b-yota-app__b_1,
+    .b-yota-app__b_2,
+    .b-yota-app__b_3 {
+        padding: 20px 0;
+    }
+    
+    .b-yota-app__b_4 {
+        padding: 0 0 20px;
+    }
+
+    .b-yota-app__b_4_top ul.info {
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .b-yota-app__b_1_title {
+        /*text-align: center;*/
+    }
+    
+    .b-yota-app__b_1_title .row-2 {
+        margin: 20px 0 0;
+    }
+    
+    .b-yota-app__b_4_top ul {
+        display: block;
+        width: auto;
+    }
+
+    .b-yota-app__b_4_top ul li {
+        /*display: block;*/
+        margin: 0 auto;
+        padding: 5px 0 0;
+        text-align: center;
+    }
+
+    .b-yota-app__b_4_top ul li:nth-child(odd) {
+        /*padding: 20px 0 0;*/
+    }
+    
+    .b-yota-app__b_4_bottom {
+        padding: 40px 0 0;
+        text-align: center;
+    }
+    
+    .b-yota-app__b_2_left {
+        width: 90px;
+    }
+    
+    .b-yota-app__b_2_text .row-1 {
+        font-size: 14px;
+    }
+    
+    .b-yota-app__b_2_text .row-2 {
+        font-size: 26px;
+    }
+    
+    .b-yota-app__b_2_text .row-2 span {
+        font-size: 16px;
+    }
+    
+    .b-yota-app__b_2_content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+}
+
+/*
+@media (max-width: 320px) {
+    .yota-app .inner-wrapper {
+        width: 300px;
+    }
+    
+    .b-yota-app .button-1,
+    .b-yota-app .button-2 {
+        font-size: 9px;
+        line-height: 10px;
+    }
+    
+    .b-yota-app .button-1 {
+        padding: 8px 20px;
+        border-radius: 13px;
+    }
+    
+    .b-yota-app .button-2 {
+        padding: 0 20px;
+    }
+    
+    .b-yota-app__b_1 {
+        padding: 22px 0 12px;
+    }
+    
+    .b-yota-app__b_1_title .row-1 {
+        font-size: 16px;
+    }
+
+    .b-yota-app__b_1_title .row-2 {
+        margin: 10px 0 0;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .b-yota-app__b_2 {
+        padding: 25px 0;
+    }
+    
+    .b-yota-app__b_2_left {
+        width: 60px;
+    }
+    
+    .b-yota-app__b_2_content {
+        padding: 0 20px;
+    }
+    
+    .b-yota-app__b_2_text .row-1 {
+        font-size: 10px;
+    }
+    
+    .b-yota-app__b_2_text .row-2 {
+        font-size: 17px;
+    }
+    
+    .b-yota-app__b_2_text .row-2 span {
+        font-size: 12px;
+    }
+    
+    .b-yota-app__b_3 {
+        padding: 17px 0;
+    }
+    
+    .b-yota-app__b_4 {
+        padding: 20px 0;
+    }
+    
+    b-yota-app__b_4_bottom {
+        padding: 20px 0 0;
+    }
+    
+    .b-yota-app__b_4_top ul li,
+    .b-yota-app__b_4_bottom {
+        font-size: 6.5px;
+    }
+    
+    .b-yota-app__b_4_top ul li:nth-child(odd) {
+        width: 21px;
+    }
+}
+*/

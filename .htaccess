@@ -1,0 +1,12 @@
+RewriteEngine on
+AddDefaultCharset UTF-8
+
+# если директория или файл существуют, используем их
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# в противном случае перенаправляем запрос через index.php
+RewriteRule . index.php
+
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http:\/\/%1/$1 [R=301,QSA,L]

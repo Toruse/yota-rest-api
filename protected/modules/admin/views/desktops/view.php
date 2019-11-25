@@ -1,0 +1,56 @@
+<?php
+/* @var $this DesktopsController */
+/* @var $model Desktops */
+
+$this->pageTitle=Yii::app()->name.' - '.Yii::t('modules_admin','View').' '.Yii::t('modules_admin','Tariff');
+
+$this->breadcrumbs=array(
+    Yii::t('modules_admin','Admin')=>array('/admin'),
+    Yii::t('modules_admin','For desktops')=>array('index'),
+	$model->name,
+);
+
+$this->menu=array(
+	array('label'=>Yii::t('modules_admin','List').' '.Yii::t('modules_admin','Tariffs'), 'url'=>array('index')),
+	array('label'=>Yii::t('modules_admin','Create').' '.Yii::t('modules_admin','Tariff'), 'url'=>array('create')),
+	array('label'=>Yii::t('modules_admin','Update').' '.Yii::t('modules_admin','Tariff'), 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>Yii::t('modules_admin','Delete').' '.Yii::t('modules_admin','Tariff'), 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>Yii::t('modules_admin','Are you sure you want to delete this item?'))),
+//	array('label'=>'Manage Desktops', 'url'=>array('admin')),
+);
+?>
+
+<h1><?php echo Yii::t('modules_admin','View').' '.Yii::t('modules_admin','Tariff')?> #<?php echo $model->id; ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id',
+        array(
+            'name'=>'id_region',
+            'value'=>function ($model){
+                return $model->idRegion->name;
+            },
+        ),
+		'name',
+        array(
+            'name'=>'period',
+            'value'=>function ($model){
+                return Desktops::getListPeriod()[$model->period];
+            },
+        ),
+		'time',
+        array(
+            'name'=>'speed',
+            'value'=>function ($model){
+                return ($model->speed=='maximum'?'максимальная':$model->speed);
+            },
+        ),
+		'price',
+        array(
+            'name'=>'active',
+            'value'=>function ($model){
+                return ($model->active)?Yii::t('modules_admin','Active'):Yii::t('modules_admin','Not active');
+            },
+        ),
+	),
+)); ?>
